@@ -6,6 +6,7 @@
     <title>Product listing</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
@@ -33,17 +34,17 @@
            
         </div>
      </nav>
-     <section class="Home">
+     <section class="Home" id="Home">
         <div class="content">
             <div class="left-box">
                 <div class="one">
-                <h1 class="heading">
+                <h1 class="main-heading">
                     Meet, Eat & Enjoy The <span class="head">True Taste.</span>
                 </h1>
                 </div>
                 <div class="two">
                 <p class="para">
-                    Discover a variety of exquisite dishes crafted with passion and served with love. Join us for an unforgettable culinary experience that tantalizes your taste buds.
+                    Discover a variety of exquisite dishes crafted with passion and served with love. Join us for an unforgettable culinary experience that tantalizes your taste buds
                 </p>
                 </div>
                 <div class="three">
@@ -57,9 +58,140 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz1oghCMfie_4AOsUF0JwofGnAItBiH-hKQ&s" alt="Home-img" >
             </div>
         </div>
-        
      </section>
 
+     <section class="special" id="Special">
+        <div class="upper-sec">
+            <h1 class="text-3xl md:text-4xl font-bold">
+                Our Special <span class="dish">Dish</span>
+            </h1>
+            <p class="special-para">
+                Explore our chef's special creations, crafted with the finest ingredients and bursting with unique flavors that will leave you craving for more.
+            </p>
+        </div>
+        <div class="lower-sec">
+            <div class="card">
+                <img class="card-img"
+                src="chicken_veg_curry.jpg" alt="chicken_veg_curry"/>
+                <h1 class="card-heading">
+                    Chicken Veg Curry
+                </h1>
+                <p class="card-para">
+                    A delightful blend of tender chicken and fresh vegetables simmered in a rich, aromatic curry sauce, perfect for a hearty meal.
+                </p>
+                <span class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9734; 
+                </span>
+                <div class="card-lower-sec">
+                    <div class="price">
+                        $12.99
+                    </div>
+                    <button class="card-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                src="chicken_biryani.jpg" alt="chicken_veg_curry"/>
+                <h1 class="card-heading">
+                    Chicken Biryani
+                </h1>
+                <p class="card-para">
+                    A fragrant and flavorful rice dish layered with marinated chicken, spices, and herbs, cooked to perfection for a satisfying meal.
+                </p>
+                <span class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9734; 
+                </span>
+                <div class="card-lower-sec">
+                    <div class="price">
+                        $16.99
+                    </div>
+                    <button class="card-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                src="pasta.jpg" alt="chicken_veg_curry"/>
+                <h1 class="card-heading">
+                    Chicken Veg Pasta
+                </h1>
+                <p class="card-para">
+                    A delightful blend of tender chicken and fresh vegetables simmered in a rich, aromatic curry sauce, perfect for a hearty meal.
+                </p>
+                <span class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </span>
+                <div class="card-lower-sec">
+                    <div class="price">
+                        $18.99
+                    </div>
+                    <button class="card-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section id="Chef" class="mt-24 px-6 md:px-12 lg:px-20 flex flex-col-reverse lg:flex-row items-center gap-10 max-w-[1200px] mx-auto">
+    
+    <!-- Left Content -->
+    <div class="flex-1 space-y-6 m-6">
+        <h1 class="text-3xl md:text-4xl font-bold">
+            Cooked By The <span class="text-orange-500">Best Chefs</span>
+        </h1>
+
+        <p class="text-gray-600 ">
+            Our culinary team is composed of world-class chefs who bring passion, 
+            creativity, and expertise to every dish they prepare, ensuring an exceptional
+            dining experience for our guests.
+        </p>
+        <div class="space-y-4">
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
+                <p class="text-gray-700">
+                    Savour culinary brilliance from master chefs worldwide.
+                </p>
+            </div>
+
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
+                <p class="text-gray-700">
+                    Experience innovative creations with attention to detail.
+                </p>
+            </div>
+
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
+                <p class="text-gray-700">
+                    Passionate chefs dedicated to culinary excellence.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex-1 flex justify-center">
+        <img src="chef.avif" 
+             alt="chef" 
+             class="w-72 md:w-96 rounded-3xl shadow-xl object-cover hover:scale-105 transition-transform duration-300"/>
+    </div>
+
+    </section>
+
+    <section class="clients" id="Clients">
+        <h1 class="text-3xl md:text-4xl font-bold">
+            What Our Customers Are Saying
+        </h1>
+
+    </section>
+      <button class="toggle-btn">
+        Toggle button
+    </button>
      <script src="basic.js"></script>
 </body>
 </html>
