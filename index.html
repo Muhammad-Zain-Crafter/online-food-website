@@ -1,197 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product listing</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <!-- navbar -->
-     <nav class="navbar">
-        <div class="logo">
-            Food<span class="title">man</span>
-        </div>
-        <div class="nav-links">
-            <a href="#Home" class="nav-items">Home</a>
-            <a href="#Special" class="nav-items">Special</a>
-            <a href="#Chef" class="nav-items">Chef</a>
-            <a href="#Clients" class="nav-items">Clients</a>
-            <a href="#Contact" class="nav-items">Contact Us</a>
-        </div>
-        <div class="menu">
-             <button class="menu-btn">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-        <div class="shopping-btn">
-            <button class="btn">
-                <i class="fa-solid fa-bag-shopping" id="shopping-logo"></i>
-            </button>
-           
-        </div>
-     </nav>
-     <section class="Home" id="Home">
-        <div class="content">
-            <div class="left-box">
-                <div class="one">
-                <h1 class="main-heading">
-                    Meet, Eat & Enjoy The <span class="head">True Taste.</span>
-                </h1>
-                </div>
-                <div class="two">
-                <p class="para">
-                    Discover a variety of exquisite dishes crafted with passion and served with love. Join us for an unforgettable culinary experience that tantalizes your taste buds
-                </p>
-                </div>
-                <div class="three">
-                    <button class="start-btn">
-                        Get Started
-                    </button>
-                </div>
-
-            </div>
-            <div class="right-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz1oghCMfie_4AOsUF0JwofGnAItBiH-hKQ&s" alt="Home-img" >
-            </div>
-        </div>
-     </section>
-
-     <section class="special" id="Special">
-        <div class="upper-sec">
-            <h1 class="text-3xl md:text-4xl font-bold">
-                Our Special <span class="dish">Dish</span>
+    <nav class="navbar">
+      <div class="logo">Food<span class="title">man</span></div>
+      <div class="nav-links">
+        <a href="#Home" class="nav-items">Home</a>
+        <a href="#Special" class="nav-items">Special</a>
+        <a href="#Chef" class="nav-items">Chef</a>
+        <a href="#Clients" class="nav-items">Clients</a>
+        <a href="#Contact" class="nav-items">Contact Us</a>
+      </div>
+      <div class="menu">
+        <button class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="toggle-container">
+        <button class="toggle-btn">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+    <section class="Home" id="Home">
+      <div class="content">
+        <div class="left-box">
+          <div class="one">
+            <h1 class="main-heading">
+              Meet, Eat & Enjoy The <span class="head">True Taste.</span>
             </h1>
-            <p class="special-para">
-                Explore our chef's special creations, crafted with the finest ingredients and bursting with unique flavors that will leave you craving for more.
+          </div>
+          <div class="two">
+            <p class="para">
+              Discover a variety of exquisite dishes crafted with passion and
+              served with love. Join us for an unforgettable culinary experience
+              that tantalizes your taste buds
             </p>
+          </div>
+          <div class="three">
+            <button class="start-btn">Get Started</button>
+          </div>
         </div>
-        <div class="lower-sec">
-            <div class="card">
-                <img class="card-img"
-                src="chicken_veg_curry.jpg" alt="chicken_veg_curry"/>
-                <h1 class="card-heading">
-                    Chicken Veg Curry
-                </h1>
-                <p class="card-para">
-                    A delightful blend of tender chicken and fresh vegetables simmered in a rich, aromatic curry sauce, perfect for a hearty meal.
-                </p>
-                <span class="rating">
-                    &#9733; &#9733; &#9733; &#9733; &#9734; 
-                </span>
-                <div class="card-lower-sec">
-                    <div class="price">
-                        $12.99
-                    </div>
-                    <button class="card-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img"
-                src="chicken_biryani.jpg" alt="chicken_veg_curry"/>
-                <h1 class="card-heading">
-                    Chicken Biryani
-                </h1>
-                <p class="card-para">
-                    A fragrant and flavorful rice dish layered with marinated chicken, spices, and herbs, cooked to perfection for a satisfying meal.
-                </p>
-                <span class="rating">
-                    &#9733; &#9733; &#9733; &#9733; &#9734; 
-                </span>
-                <div class="card-lower-sec">
-                    <div class="price">
-                        $16.99
-                    </div>
-                    <button class="card-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img"
-                src="pasta.jpg" alt="chicken_veg_curry"/>
-                <h1 class="card-heading">
-                    Chicken Veg Pasta
-                </h1>
-                <p class="card-para">
-                    A delightful blend of tender chicken and fresh vegetables simmered in a rich, aromatic curry sauce, perfect for a hearty meal.
-                </p>
-                <span class="rating">
-                    &#9733; &#9733; &#9733; &#9733; &#9733;
-                </span>
-                <div class="card-lower-sec">
-                    <div class="price">
-                        $18.99
-                    </div>
-                    <button class="card-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
+        <div class="right-box">
+          <img src="hero-img.avif" alt="Home-img" />
         </div>
-     </section>
+      </div>
+    </section>
 
-     <section id="Chef" class="mt-24 px-6 md:px-12 lg:px-20 flex flex-col-reverse lg:flex-row items-center gap-10 max-w-[1200px] mx-auto">
-    
-    <!-- Left Content -->
-    <div class="flex-1 space-y-6 m-6">
+    <section class="special" id="Special">
+      <div class="upper-sec">
         <h1 class="text-3xl md:text-4xl font-bold">
-            Cooked By The <span class="text-orange-500">Best Chefs</span>
+          Our Special <span class="dish">Dish</span>
+        </h1>
+        <p class="special-para">
+          Explore our chef's special creations, crafted with the finest
+          ingredients and bursting with unique flavors that will leave you
+          craving for more.
+        </p>
+      </div>
+      <div class="lower-sec">
+        <div class="card">
+          <img
+            class="card-img"
+            src="chicken_veg_curry.jpg"
+            alt="chicken_veg_curry"
+          />
+          <h1 class="card-heading">Chicken Veg Curry</h1>
+          <p class="card-para">
+            A delightful blend of tender chicken and fresh vegetables simmered
+            in a rich, aromatic curry sauce, perfect for a hearty meal.
+          </p>
+          <span class="rating"> &#9733; &#9733; &#9733; &#9733; &#9734; </span>
+          <div class="card-lower-sec">
+            <div class="price">$12.99</div>
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="chicken_biryani.jpg"
+            alt="chicken_veg_curry"
+          />
+          <h1 class="card-heading">Chicken Biryani</h1>
+          <p class="card-para">
+            A fragrant and flavorful rice dish layered with marinated chicken,
+            spices, and herbs, cooked to perfection for a satisfying meal.
+          </p>
+          <span class="rating"> &#9733; &#9733; &#9733; &#9733; &#9734; </span>
+          <div class="card-lower-sec">
+            <div class="price">$16.99</div>
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="pasta.jpg" alt="chicken_veg_curry" />
+          <h1 class="card-heading">Chicken Veg Pasta</h1>
+          <p class="card-para">
+            A delightful blend of tender chicken and fresh vegetables simmered
+            in a rich, aromatic curry sauce, perfect for a hearty meal.
+          </p>
+          <span class="rating"> &#9733; &#9733; &#9733; &#9733; &#9733; </span>
+          <div class="card-lower-sec">
+            <div class="price">$18.99</div>
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Chef"
+      class="mt-24 px-6 md:px-12 lg:px-20 flex flex-col-reverse lg:flex-row items-center gap-10 max-w-[1200px] mx-auto"
+    >
+      <!-- Left Content -->
+      <div class="flex-1 space-y-6 m-6">
+        <h1 class="text-3xl md:text-4xl font-bold">
+          Cooked By The <span class="text-orange-500">Best Chefs</span>
         </h1>
 
-        <p class="text-gray-600 ">
-            Our culinary team is composed of world-class chefs who bring passion, 
-            creativity, and expertise to every dish they prepare, ensuring an exceptional
-            dining experience for our guests.
+        <p class="chef-para">
+          Our culinary team is composed of world-class chefs who bring passion,
+          creativity, and expertise to every dish they prepare, ensuring an
+          exceptional dining experience for our guests.
         </p>
         <div class="space-y-4">
-            <div class="flex items-start gap-3">
-                <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
-                <p class="text-gray-700">
-                    Savour culinary brilliance from master chefs worldwide.
-                </p>
-            </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
+            <p class="sub-para">
+              Savour culinary brilliance from master chefs worldwide.
+            </p>
+          </div>
 
-            <div class="flex items-start gap-3">
-                <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
-                <p class="text-gray-700">
-                    Experience innovative creations with attention to detail.
-                </p>
-            </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
+            <p class="sub-para">
+              Experience innovative creations with attention to detail.
+            </p>
+          </div>
 
-            <div class="flex items-start gap-3">
-                <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
-                <p class="text-gray-700">
-                    Passionate chefs dedicated to culinary excellence.
-                </p>
-            </div>
-
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-right-long text-orange-500 text-xl"></i>
+            <p class="sub-para">
+              Passionate chefs dedicated to culinary excellence.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Right Image -->
-    <div class="flex-1 flex justify-center">
-        <img src="chef.avif" 
-             alt="chef" 
-             class="w-72 md:w-96 rounded-3xl shadow-xl object-cover hover:scale-105 transition-transform duration-300"/>
-    </div>
-
+      <!-- Right Image -->
+      <div class="flex-1 flex justify-center">
+        <img
+          src="chef.avif"
+          alt="chef"
+          class="w-72 md:w-96 rounded-3xl shadow-xl object-cover hover:scale-105 transition-transform duration-300"
+        />
+      </div>
     </section>
 
-    <section class="clients" id="Clients">
-        <h1 class="text-3xl md:text-4xl font-bold">
-            What Our Customers Are Saying
+    <section class="clients md:mt-20 mt-12" id="Clients">
+      <div class="max-w-[800px] mx-auto mb-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-center">
+          What Our Customers Are Saying
         </h1>
+        <p class="clients-para text-sm md:text-base text-center mb-8 mt-2 m-2">
+          Discover firsthand experience and testimonial from our satisfied
+          customers who have savored our culinary delights and exceptional
+          service.
+        </p>
+      </div>
 
+      <div class="w-[90%] md:w-[70%] mx-auto overflow-hidden relative">
+        <!-- Slider Wrapper -->
+        <div id="slider" class="flex transition-transform duration-500">
+          <!-- Slide 1 -->
+          <div
+            class="min-w-full rounded-3xl border border-orange-300 shadow-[0_8px_20px_rgba(255,165,0,0.2)] p-10 text-center"
+          >
+            <p class="testimonial-para mb-5">
+              FoodMan's culinary expertise never fails to impress! Every dish is
+              a masterpiece.
+            </p>
+            <img
+              src="person-1.jpg"
+              class="w-20 h-20 rounded-full mx-auto mb-3"
+            />
+            <h3 class="testimonial-head font-semibold text-lg">David Lee</h3>
+            <span class="testimonial-head text-sm">Business Executive</span>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="min-w-full rounded-3xl border border-orange-300 shadow-[0_8px_20px_rgba(255,165,0,0.2)] p-10 text-center"
+          >
+            <p class="testimonial-para mb-5">
+              Absolutely amazing food! The flavors are rich and unique.
+            </p>
+            <img
+              src="person-2.jpg"
+              class="w-20 h-20 rounded-full mx-auto mb-3"
+            />
+            <h3 class="testimonial-head font-semibold text-lg">Aden Walker</h3>
+            <span class="testimonial-head text-sm">Food Blogger</span>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="min-w-full rounded-3xl border border-orange-300 shadow-[0_8px_20px_rgba(255,165,0,0.2)] p-10 text-center"
+          >
+            <p class="testimonial-para mb-5">
+              Great service and delicious meals. Highly recommended!
+            </p>
+            <img
+              src="person-3.jpg"
+              class="w-20 h-20 rounded-full mx-auto mb-3"
+            />
+            <h3 class="testimonial-head font-semibold text-lg">Lana Ross</h3>
+            <span class="testimonial-head text-sm">Entrepreneur</span>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="flex justify-center mt-5 space-x-2">
+          <span
+            class="dot w-3 h-3 bg-orange-400 rounded-full cursor-pointer"
+            onclick="goToSlide(0)"
+          ></span>
+          <span
+            class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+            onclick="goToSlide(1)"
+          ></span>
+          <span
+            class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+            onclick="goToSlide(2)"
+          ></span>
+        </div>
+      </div>
     </section>
-      <button class="toggle-btn">
-        Toggle button
-    </button>
-     <script src="basic.js"></script>
-</body>
+    <section class="Contact md:mt-20 mt-16 m-4" id="Contact">
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">
+        Get In Touch <span class="text-orange-500">With Us</span>
+      </h1>
+
+      <form
+        class="contact-form max-w-[600px] mx-auto flex flex-col gap-4 p-6 border border-orange-300 rounded-3xl shadow-[0_8px_20px_rgba(255,165,0,0.2)]"
+      >
+        <input
+          id="name"
+          type="text"
+          placeholder="Your Name"
+          class="input-box p-3 border border-gray-300 rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-400"
+        />
+
+        <input
+          id="email"
+          type="email"
+          placeholder="Your Email"
+          class="input-box p-3 border border-gray-300 rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-400"
+        />
+
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Your Message"
+          class="input-box p-3 border border-gray-300 rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-400"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300 dark:hover:bg-orange-500"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10"
+      >
+        <!-- Logo + About -->
+        <div>
+          <h2 class="text-2xl font-bold text-white mb-3">FoodMan</h2>
+          <p class="text-sm text-gray-400">
+            Delicious food, excellent service, and unforgettable dining
+            experiences.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-orange-400">Home</a></li>
+            <li><a href="#" class="hover:text-orange-400">Menu</a></li>
+            <li><a href="#" class="hover:text-orange-400">About Us</a></li>
+            <li><a href="#" class="hover:text-orange-400">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-3">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-orange-400">FAQ</a></li>
+            <li>
+              <a href="#" class="hover:text-orange-400">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400">Terms & Conditions</a>
+            </li>
+            <li><a href="#" class="hover:text-orange-400">Help Center</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-3">Contact Us</h3>
+          <ul class="text-sm space-y-2">
+            <li>📍 Karachi, Pakistan</li>
+            <li>📞 +92 300 1234567</li>
+            <li>📧 support@foodman.com</li>
+          </ul>
+
+          <!-- Social Icons -->
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-orange-400 text-xl">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-orange-400 text-xl">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-orange-400 text-xl">
+              <i class="fa-solid fa-envelopes-bulk"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-4"
+      >
+        © 2025 FoodMan. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="basic.js"></script>
+  </body>
 </html>
