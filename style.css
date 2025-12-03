@@ -27,6 +27,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 /* -------------------- NAVBAR -------------------- */
